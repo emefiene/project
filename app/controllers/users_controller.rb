@@ -1,6 +1,8 @@
 class UsersController < ApplicationController
 
     def index
-        User.all
+    #   render json:  User.all
+      render json: User.all, status: :ok
+
     end
 end
